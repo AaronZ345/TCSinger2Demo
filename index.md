@@ -49,7 +49,7 @@ Successfully transferred timbre, accent, enunciation, pop singing method, emotio
 		<th style='text-align: center'>CosyVoice</th>
 			<th style='text-align: center'>VISinger 2</th>
 			<th style='text-align: center'>TCSinger</th>
-			<th style='text-align: center'></th>
+			<th style='text-align: center'>TCSinger 2</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -316,6 +316,8 @@ Multi-level styles are randomly assigned in a manner that is appropriate for the
 		</tr>
 	</tbody>
 </table>
+
+---
 
 # Speech-to-Singing Style Transfer
 
