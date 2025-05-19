@@ -278,56 +278,7 @@ It is evident that the timbre, accent, and enunciation have been successfully tr
 
 # Style Control
 
-## Parallel Style Control
-
-Multi-level styles are randomly assigned in a manner that is appropriate for the context. In the parallel experiments, we randomly select unseen audio from the test set, using the ground truth (GT) textual prompts as the target. We also input music scores as contents.
-
-<table style='width: 100%;'>
-	<thead>
-		<tr>
-			<th style='text-align: center'>Language</th>
-			<th style='text-align: center'>Target Lyric</th>
-			<th style='text-align: center'>Textual Prompt</th>
-			<th style='text-align: center'>TCSinger 2</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th style='text-align: center; font-weight: normal;'>Chinese</th>
-			<th style='text-align: center; font-weight: normal;'>带把伞，乌云乌云快走开</th>
-			<th style='text-align: center; font-weight: normal;'>A female singer with an alto vocal range performs a sad pop song. She sings with the breathy technique.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sc/cus/001.wav' type='audio/wav'></audio></td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<th style='text-align: center; font-weight: normal;'>English</th>
-			<th style='text-align: center; font-weight: normal;'>what's going on in that beautiful mind, i'm on your magical mystery ride</th>
-			<th style='text-align: center; font-weight: normal;'>A female singer with an alto vocal range performs a happy pop song. She sings with the falsetto technique.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sc/cus/002.wav' type='audio/wav'></audio></td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<th style='text-align: center; font-weight: normal;'>Italian</th>
-			<th style='text-align: center; font-weight: normal;'> questa mette i brividi, certe volte è più un combattimento c'è</th>
-			<th style='text-align: center; font-weight: normal;'>A female singer with an soprano vocal range performs a pop song. She sings with the pharyngeal technique.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sc/cus/003.wav' type='audio/wav'></audio></td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<th style='text-align: center; font-weight: normal;'>Japanese</th>
-			<th style='text-align: center; font-weight: normal;'>誰もいないステジ</th>
-			<th style='text-align: center; font-weight: normal;'>A male singer with an tenor vocal range performs a sad pop song. He sings with the mixed voice technique.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sc/cus/004.wav' type='audio/wav'></audio></td>
-		</tr>
-	</tbody>
-</table>
-
-## Non-Parallel Style Control
-
-Multi-level styles are randomly assigned in a manner that is appropriate for the context. In the parallel experiments, we randomly select unseen audio from the test set, using the ground truth (GT) textual prompts as the target. These styles include global timbre (such as the singer's gender and vocal range), singing method (e.g., bel canto and pop), emotion (e.g., happy and sad), and segment-level or word-level techniques (such as mixed voice, falsetto, breathy, vibrato, glissando, and pharyngeal). We also input the same music scores as contents.
+Multi-level styles are randomly assigned in a manner that is appropriate for the context. These styles include global timbre (such as the singer's gender and vocal range), singing method (e.g., bel canto and pop), emotion (e.g., happy and sad), and segment-level or word-level techniques (such as mixed voice, falsetto, breathy, vibrato, glissando, and pharyngeal). We also input the same music scores as content.
 
 **Target Lyric:** 一壶清酒一生尘灰
 
