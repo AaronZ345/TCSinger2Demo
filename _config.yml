@@ -1,0 +1,7 @@
+theme: jekyll-theme-architect
+layout: default
+markdown: kramdown
+kramdown:
+  toc_levels: 1..2
+title: "TCSinger 2: Customizable Multilingual Zero-shot Singing Voice Synthesis"
+
