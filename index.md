@@ -410,3 +410,34 @@ Successfully transferred timbre, accent, enunciation.
 		</tr>
 	</tbody>
 </table>
+
+# Citation
+
+<div class="citation-block">
+  <button type="button" class="citation-copy">Copy BibTeX</button><span class="citation-status" role="status"></span>
+  <pre><code>@inproceedings{zhang-etal-2025-tcsinger,
+    title = &quot;{TCS}inger 2: Customizable Multilingual Zero-shot Singing Voice Synthesis&quot;,
+    author = &quot;Zhang, Yu  and
+      Guo, Wenxiang  and
+      Pan, Changhao  and
+      Yao, Dongyu  and
+      Zhu, Zhiyuan  and
+      Jiang, Ziyue  and
+      Wang, Yuhan  and
+      Jin, Tao  and
+      Zhao, Zhou&quot;,
+    editor = &quot;Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher&quot;,
+    booktitle = &quot;Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2025&quot;,
+    month = jul,
+    year = &quot;2025&quot;,
+    address = &quot;Vienna, Austria&quot;,
+    publisher = &quot;Association for Computational Linguistics&quot;,
+    url = &quot;https://aclanthology.org/2025.findings-acl.687/&quot;,
+    doi = &quot;10.18653/v1/2025.findings-acl.687&quot;,
+    pages = &quot;13280--13294&quot;,
+    ISBN = &quot;979-8-89176-256-5&quot;
+}</code></pre>
+</div>
