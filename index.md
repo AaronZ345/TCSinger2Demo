@@ -7,11 +7,11 @@
 
 # Abstract
 
-Customizable multilingual zero-shot singing voice synthesis (SVS) has various potential applications in music composition and short video dubbing. However, existing SVS models overly depend on phoneme and note boundary annotations, limiting their robustness in zero-shot scenarios and producing poor transitions between phonemes and notes. Moreover, they also lack effective multi-level style control via diverse prompts. To overcome these challenges, we introduce TCSinger 2, a multi-task multilingual zero-shot SVS model with style transfer and style control based on various prompts. TCSinger 2 mainly includes three key modules: 1) Blurred Boundary Content (BBC) Encoder, predicts duration, extends content embedding, and applies masking to the boundaries to enable smooth transitions.2) Custom Audio Encoder, uses contrastive learning to extract aligned representations from singing, speech, and textual prompts.3) Flow-based Custom Transformer, leverages Cus-MOE, with F0 supervision, enhancing both the synthesis quality and style modeling of the generated singing voice. Experimental results show that  outperforms baseline models in both subjective and objective metrics across multiple related tasks. 
+Customizable multilingual zero-shot singing voice synthesis (SVS) has various potential applications in music composition and short video dubbing. However, existing SVS models overly depend on phoneme and note boundary annotations, limiting their robustness in zero-shot scenarios and producing poor transitions between phonemes and notes. Moreover, they also lack effective multi-level style control via diverse prompts. To overcome these challenges, we introduce TCSinger 2, a multi-task multilingual zero-shot SVS model with style transfer and style control based on various prompts. TCSinger 2 mainly includes three key modules: 1) Blurred Boundary Content (BBC) Encoder, predicts duration, extends content embedding, and applies masking to the boundaries to enable smooth transitions.2) Custom Audio Encoder, uses contrastive learning to extract aligned representations from singing, speech, and textual prompts.3) Flow-based Custom Transformer, leverages Cus-MOE, with F0 supervision, enhancing both the synthesis quality and style modeling of the generated singing voice. Experimental results show that TCSinger 2 outperforms baseline models in both subjective and objective metrics across multiple related tasks.
 
 ---
 
-**Note：** We conduct all tasks in the zero-shot scenario, with training and testing on multi-lingual speech and singing data. All samples are resample to 48kHZ.
+**Note：** We conduct all tasks in the zero-shot scenario, with training and testing on multi-lingual speech and singing data. All samples are resampled to 48 kHz.
 
 ---
 
@@ -36,8 +36,8 @@ Successfully transferred timbre, accent, enunciation, pop singing method, emotio
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/prompt/002.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/gt/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/prompt/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/gt/002.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -54,11 +54,11 @@ Successfully transferred timbre, accent, enunciation, pop singing method, emotio
 	</thead>
 	<tbody>
 		<tr>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/style/002.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cosy/002.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/vi/002.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/tc/002.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cus/002.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/style/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cosy/002.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/vi/002.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/tc/002.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cus/002.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -79,8 +79,8 @@ Successfully transferred timbre, accent, enunciation, pop singing method.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/prompt/001.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/gt/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/prompt/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/gt/001.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -97,11 +97,11 @@ Successfully transferred timbre, accent, enunciation, pop singing method.
 	</thead>
 	<tbody>
 		<tr>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/style/001.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cosy/001.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/vi/001.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/tc/001.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cus/001.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/style/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cosy/001.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/vi/001.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/tc/001.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cus/001.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -121,8 +121,8 @@ Successfully transferred timbre, accent, enunciation, pop singing method, and mi
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/prompt/003.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/gt/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/prompt/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/gt/003.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -139,11 +139,11 @@ Successfully transferred timbre, accent, enunciation, pop singing method, and mi
 	</thead>
 	<tbody>
 		<tr>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/style/003.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cosy/003.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/vi/003.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/tc/003.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cus/003.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/style/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cosy/003.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/vi/003.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/tc/003.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cus/003.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -163,8 +163,8 @@ Successfully transferred timbre, accent, enunciation, bel canto singing method.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/prompt/004.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/gt/004.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/prompt/004.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/gt/004.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -181,11 +181,11 @@ Successfully transferred timbre, accent, enunciation, bel canto singing method.
 	</thead>
 	<tbody>
 		<tr>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/style/004.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cosy/004.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/vi/004.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/tc/004.wav' type='audio/wav'></audio></td>
-				<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/svs/cus/004.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/style/004.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cosy/004.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/vi/004.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/tc/004.wav' type='audio/wav'></audio></td>
+				<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/svs/cus/004.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -209,8 +209,8 @@ Successfully transferred timbre, accent, enunciation, pop singing method.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/cross/prompt/001.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/cross/cus/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/cross/prompt/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/cross/cus/001.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -231,8 +231,8 @@ Successfully transferred timbre, accent, enunciation, pop singing method.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/cross/prompt/002.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/cross/cus/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/cross/prompt/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/cross/cus/002.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -256,20 +256,20 @@ It is evident that the timbre, accent, and enunciation have been successfully tr
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unst/prompt/003.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unst/cus/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unst/prompt/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unst/cus/003.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unst/prompt/001.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unst/cus/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unst/prompt/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unst/cus/001.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unst/prompt/002.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unst/cus/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unst/prompt/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unst/cus/002.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -294,25 +294,25 @@ Multi-level styles are randomly assigned in a manner that is appropriate for the
 	<tbody>
 		<tr>
 			<th style='text-align: center; font-weight: normal;'>A female singer with an alto vocal range performs a pop song.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unsc/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unsc/001.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
 			<th style='text-align: center; font-weight: normal;'>A male singer with an tenor vocal range performs a pop song.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unsc/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unsc/002.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
 			<th style='text-align: center; font-weight: normal;'>A female singer with an alto vocal range performs a pop song. She sings with the breathy technique in the whole segment.</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unsc/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unsc/003.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
 			<th style='text-align: center; font-weight: normal;'>A female singer with an alto vocal range performs a pop song. She begins with the breathy techniques in the first half of the song (three words), before transitioning into falsetto for the second half (about five words).</th>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/unsc/004.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/unsc/004.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -338,8 +338,8 @@ Successfully transferred timbre, accent, enunciation.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/prompt/001.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/cus/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/prompt/001.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/cus/001.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -360,8 +360,8 @@ Successfully transferred timbre, accent, enunciation.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/prompt/002.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/cus/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/prompt/002.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/cus/002.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -382,8 +382,8 @@ Successfully transferred timbre, accent, enunciation.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/prompt/003.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/cus/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/prompt/003.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/cus/003.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -405,8 +405,8 @@ Successfully transferred timbre, accent, enunciation.
 	</thead>
 	<tbody>
 		<tr>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/prompt/004.wav' type='audio/wav'></audio></td>
-			<td style='text-align: center'><audio controls style='width: 150px;'><source src='wavs/sts/cus/004.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/prompt/004.wav' type='audio/wav'></audio></td>
+			<td style='text-align: center'><audio preload="none" controls style='width: 150px;'><source src='wavs/sts/cus/004.wav' type='audio/wav'></audio></td>
 		</tr>
 	</tbody>
 </table>
